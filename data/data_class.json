@@ -1,0 +1,11 @@
+{
+  "CLASS": [
+{"id": 0, "class_name": "TD1", "id_matter": 0, "id_teacher": 1, "file_name": "enonce_TD1.pdf"},
+{"id": 1, "class_name": "Correction TD1", "id_matter": 0, "id_teacher": 1, "file_name": "elements_correction_TD1.pdf"},
+{"id": 2, "class_name": "TD", "id_matter": 3, "id_teacher": 3, "file_name": "polyinsatheojeux-EN.pdf"},
+{"id": 3, "class_name": "TP", "id_matter": 3, "id_teacher": 3, "file_name": "TP-TdJ.pdf"},
+{"id": 5, "class_name": "Introduction déploiement logiciel", "id_matter": 1, "id_teacher": 7, "file_name": "SOFTWARE_DEPLOYMENT___introduction.pdf"},
+{"id": 6, "class_name": "Algorithme de classification", "id_matter": 4, "id_teacher": 7, "file_name": "presentation_ictai.pdf"},
+{"id": 7, "class_name": "Méthode RNA-seq", "id_matter": 4, "id_teacher": 9, "file_name": "RNAseq_compressed.pdf"}
+]
+}

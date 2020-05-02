@@ -1,0 +1,23 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<head>
+	<meta charset="UTF-8">
+	<title>BioInfo 4A Web development</title>
+</head>
+<body>
+	<div class="alert alert-success" role="alert">
+	<FONT size="3pt"><center>Bienvenue sur l'interface graphique de gestion des documents de cours!</br> Cette interface a été développée par FLOREAU Julian dans le cadre du cours de Programmation Web de Geoffroy Berret à l'INSA</center></FONT>
+	</div>
+</body>
+
+<html>
+	<body>
+		<h1>Graphique des données</h1>
+		<embed type="image/svg+xml" src={{pie_data|safe}} style='max-width:1000px'/>
+		<embed type="image/svg+xml" src={{graph_data|safe}} style='max-width:1000px'/>
+	</body>
+</html>
+
+
+{% endblock %}

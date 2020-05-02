@@ -1,0 +1,9 @@
+{
+  "TEACHERS": [
+    {"id": 1, "teacher": "Fabien Subtil"},
+    {"id": 3, "teacher": "Sandrine Charles"},
+    {"id": 5, "teacher": "Geoffroy Berret"},
+    {"id": 7, "teacher": "Sergio Peignier"},
+    {"id": 9, "teacher": "Vincent Lacroix"}
+]
+}

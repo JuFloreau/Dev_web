@@ -1,0 +1,32 @@
+#Web Page: schoolclass management, visualization and data base
+
+Je sais que ce projet devait être fait en groupe, cependant devant, à l'origine, réaliser une interface pour mon stage, j'ai décidé de développer celle-ci tout seul.
+
+Cette interface a pour but de faciliter la gestion des cours. En effet, nous disposons de beaucoup de fichiers pdf avec des noms pas toujours explicite.
+Grâce a cette interface, on peut assigner à un fichier (txt, pdf, png, jpg, jpeg, gif, les autres format ne sont pas supporté par choix personnel), un nom de cours, un professeur et une matière.
+Cela est pratique quand un professeur donne cours dans plusieurs matières ou que nous avons plusieurs professeurs pour une même matière.
+L'utilisateur peut aussi créer un nouveau professeur ou une nouvelle matière. Il peut également supprimer ces derniers en cas d'erreur ou autres raisons.
+De même il peut supprimer un cours quand il le désire. Il peut également l'ouvrir ou le télécharger.
+Les fichiers des cours sont sauvegardés dans static/class.
+Sur le home page, j'ai disposé des graphiques pour que l'utilisateur est une idée de la répartition des cours enregistrés.
+L'outil de recherche est disponible, il recherche à la fois la matière, le nom du professeur ou le nom du cours. L'option expression régulière est possible et fonctionnelle.
+
+J'ai laissé quelques cours pour l'exemple. J'aurais bien utilisé du JavaScript mais je ne savais pas vraiment où l'insérer.
+Une voie d'amélioration possible serait de vérifié si lors d'ajout d'un fichier, celui ci n'est pas déjà présent dans le dossier static/class. En effet cela pose des problème quand on décide de supprimer un des cours lié à ce fichier.
+
+L'interface à été développé sous Windows 10 en Python 3.8 avec l'utilisation du templace bootstap 4.
+
+### Dependencies
+
++ `pip install flask` version 1.1.1
++ `pip install werkzeug.utils` version 1.0.1
++ `pip install os`
++ `pip install json` version 3.5
++ `pip install pygal` version 2.4.0
++ `pip install re`
+
+### Authors
++ Julian Floreau : julian.floreau AT insa-lyon.fr
+
+### Maintainer 
++ Julian Floreau : julian.floreau AT insa-lyon.fr

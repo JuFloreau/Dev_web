@@ -1,0 +1,14 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<h1 class="mt-5">Demande vérification</h1>
+</br></br>
+
+<div class="alert alert-danger" role="alert">
+	<FONT size="5pt"><center>Vous allez supprimer un élément rattaché à un ou plusieur cours, si vous continez cela entrainera la suppression de tous les cours en lien. </br> 
+	Voulez vous vraiment continuer ?</br></center></FONT>
+	<center><a href="{{url_for(name,id=id)}}"><button class="btn btn-success btn-lg my-2 my-sm-0">&emsp;&emsp;Oui&emsp;&emsp;</button></a> &emsp;
+	<a href="{{url_for(back)}}"><button class="btn btn-danger btn-lg my-2 my-sm-0">&emsp;&emsp;Non&emsp;&emsp;</button></a></center>
+</div>
+
+{% endblock %}

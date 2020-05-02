@@ -1,0 +1,36 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<h1 class="mt-5">Liste des Cours</h1>
+</br></br>
+<table class="table striped table-hover cell-hovered border" id="<?php echo $idTable;?>">
+	<thead>
+        <tr align='center'><th scope="col">Matière</th><th scope="col">Professeur</th>
+		<th scope="col"> Nom du cours </th>
+    	<th scope="col">&nbsp;</th></tr>
+	</thead>
+<tbody>	
+{% if name_class %}
+	{% for classe in name_class %}
+		{% for matter in name_matter %}
+			{% if matter.id==classe.id_matter %}
+				<tr scope="row"><td align="center"> {{matter.matter}}</td>
+			{% endif %}
+		{% endfor %}			
+		{% for teacher in name_teacher %}
+			{% if teacher.id==classe.id_teacher %}
+				<td align="center"> {{teacher.teacher}}</td>
+			{% endif %}			
+		{% endfor %}
+		<td align="center">
+			<A href="{{url_for('static',filename='class/'+classe.file_name)}}">{{classe.class_name}} <span class="mif-display fg-black"></span></A>
+		</td>
+		<td align="center">
+			<a href="{{url_for('static',filename='class/'+classe.file_name)	}}" download={{classe.file_name}}><button class="btn btn-outline-success my-2 my-sm-0">Télécharger</button></a>
+			<a href="{{url_for('delete_class',id=classe.id)}}"><button class="btn btn-outline-danger my-2 my-sm-0">Suprimer</button></a>
+		</td></tr>
+	{% endfor %}
+{% endif %}	
+</tbody>
+</table>
+{% endblock %}

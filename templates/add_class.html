@@ -1,0 +1,34 @@
+{% extends 'menu.html' %}
+{% block content %}
+
+<h1 class="mt-5">Ajout d'un cours</h1>
+</br></br>
+<form action="/add_class" method="post" enctype=multipart/form-data class="form-class">
+	<div class="form-group">
+	<label for="name_class"><FONT size="4pt">Nom du cours : </FONT></label>
+	<input type="text" name="name_class" class="form-control form-control-lg" id="name_class" required>
+</br>
+	<label for="matter_name"><FONT size="4pt">Séléctionner la matière associée: </FONT></label>
+	<SELECT name="matter_name" size="1" class="form-control form-control-lg">
+	{% for item in MATTER %}
+		<OPTION> {{item.matter}}
+	{% endfor %}
+	</SELECT>
+	<a href="/add_matter">Nouvelle Matière</a>
+</br></br>
+	<label for="teacher_name"><FONT size="4pt">Séléctionner le professeur associé: </FONT></label>
+	<SELECT name="teacher_name" size="1" class="form-control form-control-lg">
+	{% for item in TEACHER %}
+		<OPTION> {{item.teacher}}
+	{% endfor %}
+	</SELECT>
+	<a href="/add_teacher">Nouveau professseur</a>
+</br></br>
+  <label for="file"><FONT size="4pt">Choisir le fichier associé:</FONT></label>
+  <input type="file" id="file" name="file" class="form-control-file form-control-lg"><br><br>
+  <input type="submit" value="Valider" class="btn btn-outline-primary my-2 my-sm-0 btn-lg">
+  </div>
+</form>
+
+
+{% endblock %}
